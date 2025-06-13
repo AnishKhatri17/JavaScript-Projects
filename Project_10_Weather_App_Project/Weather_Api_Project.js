@@ -5,7 +5,11 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
-const apiKey = "0baca3630380ceca50f63f2e62fa0bb7";
+
+// I used this because GitHub mailed me that my API key was exposed so I needed to keep my API_KEY secure in a separate file...
+import CONFIG from '../config.js';
+
+const apiKey = CONFIG.API_KEY;
 
 weatherForm.addEventListener("submit", async event => {
 
