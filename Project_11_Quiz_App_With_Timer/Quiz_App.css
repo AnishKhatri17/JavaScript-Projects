@@ -1,0 +1,135 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#question{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#options button{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#options button:hover{
+      background-color: #d0d0d0;
+}
+
+#timer{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#next-btn, #restart-btn{
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007BFF;
+    border: none;
+    color: #FFF;
+    margin-top: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+#progress{
+    color: green;
+    margin-bottom: 10px;
+}
+
+#question{
+    font-weight: bold;
+    color: red;
+}
+
+#category-box{
+    text-align: center;
+    width: 100%;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+ 
+.category-card {
+    padding: 4rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Category Background Images */
+.category-card[data-category="science"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('science.jpg');
+}
+
+.category-card[data-category="math"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('math.jpg');
+}
+
+.category-card[data-category="cosmos"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('cosmos.jpg');
+}
+
+.category-card[data-category="coding"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('coding.jpg');
+}
+
+.category-card[data-category="cricket"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('cricket.jpg');
+}
+
+.category-card[data-category="gk"] {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('generalknowledge.png');
+}
+
+
+#timer .clock{
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+#timer .red {
+    color: red;
+}

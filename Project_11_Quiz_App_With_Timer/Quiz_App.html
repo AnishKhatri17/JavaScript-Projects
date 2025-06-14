@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Timer Project</title>
+    <link rel="stylesheet" href="Quiz_App.css">
+</head>
+<body>
+        <div class="container">
+
+            <!-- Category Selection -->
+             <div id="category-box">
+                <h1>Select Category</h1>
+                <div class="categories-grid">
+                <div class="category-card" data-category="science">Science</div>
+                <div class="category-card" data-category="math">Math</div>
+                <div class="category-card" data-category="cosmos">Cosmos</div>
+                <div class="category-card" data-category="coding">Coding</div>
+                <div class="category-card" data-category="cricket">Cricket</div>
+                <div class="category-card" data-category="gk">General Knowledge</div>
+                </div>     
+             </div>
+
+             <!-- QUIZ BOX -->
+            <div id="quiz-box" class="hide">
+            <h1>Quiz Game</h1>
+            <div id="progress">Question <span id ="current-q">1</span> of <span id="total-q">5</span></div>
+                <div id="question">Question Text</div>
+                <div id="options"></div>
+                <div id="timer"> <span class="clock">⏰</span> 
+                    <span id="timer-text"> Time left: <span id="time"></span>s</span></div>
+                <button id="next-btn">Next</button> 
+            </div>
+
+            <!-- RESULT BOX -->
+            <div id="result-box" class="hide">
+                <h2>Your Score: <span id="score"></span></h2>
+                <button id="restart-btn">Restart Quiz</button>  
+            </div>
+        </div>
+
+    <script src="Quiz_App.js"></script>
+</body>
+</html>
